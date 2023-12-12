@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image on the Left</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .content {
+      flex: 2;
+    }
+    .sidebar-image {
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  border-radius: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="prof.jpeg" alt="Sidebar Image">
+    </div>
+    <div class="content">
+      <h2>About Me</h2>
+      <div class="paragraph-container">
+        <img src="prof.jpeg" alt="Sidebar Image" class="sidebar-image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac aliquet tincidunt, nunc nunc lacinia nunc, id lacinia nunc nunc eget nunc. Sed euismod, nunc id aliquam tincidunt, nunc nunc lacinia nunc, id lacinia nunc nunc eget nunc.</p>
+      </div>
+      <p>Phasellus euismod, nunc id aliquam tincidunt, nunc nunc lacinia nunc, id lacinia nunc nunc eget nunc. Sed euismod, nunc id aliquam tincidunt, nunc nunc lacinia nunc, id lacinia nunc nunc eget nunc.</p>
+    </div>
+  </div>
+</body>
+</html>
